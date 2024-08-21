@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <div className="relative">
+    <div className="max-container relative">
       <Navbar />
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />

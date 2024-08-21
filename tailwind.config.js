@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
-      xs: ["12px", "16px"],
+      xs: ["12px", "16px"], // font-size , line-height
       sm: ["14px", "20px"],
       base: ["16px", "19.5px"],
       lg: ["18px", "21.94px"],
@@ -23,7 +23,7 @@ export default {
         "coral-red": "#ff6452",
         "slate-gray": "#6d6d6d",
         "pale-blue": "#f5f6ff",
-        "white-500": "rgba(255,255,255,0.89)",
+        "white-400": "rgba(255,255,255,0.89)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0,0,0,0.1)",

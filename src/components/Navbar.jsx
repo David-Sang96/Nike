@@ -1,27 +1,27 @@
-import { hamburger } from "../assets/icons/index.js";
-import { headerLogo } from "../assets/images/index";
+import { hamburger } from "../assets/icons";
+import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
     <header className="padding-x absolute z-10 w-full py-8">
-      <nav className="max-container flex items-center justify-between">
+      <nav className="flex items-center justify-between">
         <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
         <ul className="flex flex-1 items-center justify-center gap-16 max-lg:hidden">
-          {navLinks.map((link) => (
-            <li key={link.label}>
+          {navLinks.map(({ label, href }) => (
+            <li key={label}>
               <a
-                href={link.href}
-                className="font-montserrat text-slate-gray text-lg leading-normal"
+                href={href}
+                className="font-montserrat text-lg leading-normal text-slate-gray"
               >
-                {link.label}
+                {label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="lg:hidden">
+        <div className="hidden max-lg:block">
           <img src={hamburger} alt="hamburger" width={25} height={25} />
         </div>
       </nav>
